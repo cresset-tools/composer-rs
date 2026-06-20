@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0](https://github.com/cresset-tools/composer-rs/releases/tag/composer-semver-v0.1.0) - 2026-06-20
+
 ### Added
 
 - Initial release. Composer-conformant `Version`, `Constraint`, `Stability`,
