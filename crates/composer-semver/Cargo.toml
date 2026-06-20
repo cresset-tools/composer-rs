@@ -1,0 +1,19 @@
+[package]
+name = "composer-semver"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+description = "A faithful Rust port of composer/semver: Composer-flavored Version, Constraint, and Stability — normalize, compare, and match version constraints."
+
+[dependencies]
+regex = { workspace = true }
+
+[dev-dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+[lints]
+workspace = true
