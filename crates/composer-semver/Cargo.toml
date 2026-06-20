@@ -7,6 +7,11 @@ license.workspace = true
 authors.workspace = true
 repository.workspace = true
 description = "A faithful Rust port of composer/semver: Composer-flavored Version, Constraint, and Stability — normalize, compare, and match version constraints."
+readme = "README.md"
+homepage = "https://github.com/cresset-tools/composer-rs"
+documentation = "https://docs.rs/composer-semver"
+keywords = ["composer", "semver", "php", "version", "constraint"]
+categories = ["parser-implementations", "development-tools"]
 
 [dependencies]
 regex = { workspace = true }
