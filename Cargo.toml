@@ -6,7 +6,7 @@
 # `composer-semver` is the first tenant; `composer-wire` (the v2
 # repository metadata types) is the expected next one.
 resolver = "3"
-members = ["crates/composer-php-json", "crates/composer-semver"]
+members = ["crates/composer-php-json", "crates/composer-semver", "crates/composer-wire"]
 
 [workspace.package]
 version = "0.1.0" # x-release-please-version
@@ -24,6 +24,7 @@ repository = "https://github.com/cresset-tools/composer-rs"
 [workspace.dependencies]
 composer-php-json = { path = "crates/composer-php-json", version = "0.1.0" } # x-release-please-version
 composer-semver = { path = "crates/composer-semver", version = "0.1.0" } # x-release-please-version
+composer-wire = { path = "crates/composer-wire", version = "0.1.0" } # x-release-please-version
 
 # Shared external deps.
 regex = { version = "1.11", default-features = false, features = [
