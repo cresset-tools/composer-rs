@@ -1,0 +1,25 @@
+[package]
+name = "composer-php-json"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+description = "Byte-exact PHP json_encode output for the two flag combinations Composer relies on (content-hash + JsonFile::encode)."
+readme = "README.md"
+homepage = "https://github.com/cresset-tools/composer-rs"
+documentation = "https://docs.rs/composer-php-json"
+keywords = ["composer", "php", "json", "json-encode", "serde"]
+categories = ["encoding", "development-tools"]
+
+[dependencies]
+# `preserve_order` is load-bearing: the encoder iterates objects in the order
+# serde_json stores them, and Composer's output preserves insertion order (it
+# does not re-sort nested keys). Declared directly rather than via the workspace
+# so the published crate always carries the feature regardless of how a consumer
+# configures its own serde_json.
+serde_json = { version = "1", features = ["preserve_order"] }
+
+[lints]
+workspace = true
