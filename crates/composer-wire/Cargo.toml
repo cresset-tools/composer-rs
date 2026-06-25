@@ -1,0 +1,24 @@
+[package]
+name = "composer-wire"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+description = "Composer v2 repository wire format: the p2/packages.json metadata documents and the composer/2.0 minify/expand algorithm."
+readme = "README.md"
+homepage = "https://github.com/cresset-tools/composer-rs"
+documentation = "https://docs.rs/composer-wire"
+keywords = ["composer", "php", "packagist", "metadata", "repository"]
+categories = ["parser-implementations", "development-tools"]
+
+[dependencies]
+serde = { workspace = true }
+# `preserve_order` keeps producer output in insertion order (name/version
+# first) rather than alphabetized; declared directly so the published crate
+# always carries the feature.
+serde_json = { version = "1", features = ["preserve_order"] }
+
+[lints]
+workspace = true
