@@ -11,6 +11,7 @@ slowly drifting copy.
 
 | Crate | What it is |
 |-------|------------|
+| [`composer-auth`](crates/composer-auth) | Repository credentials: the `auth.json` / `COMPOSER_AUTH` shapes and the HTTP header each credential sends. No HTTP client. |
 | [`composer-semver`](crates/composer-semver) | A faithful Rust port of `composer/semver`: Composer-flavored `Version`, `Constraint`, and `Stability` — normalize, compare, and match version constraints. |
 
 Planned: `composer-wire` — the typed Composer v2 repository metadata

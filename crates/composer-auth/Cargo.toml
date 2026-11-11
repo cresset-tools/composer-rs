@@ -1,0 +1,21 @@
+[package]
+name = "composer-auth"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+description = "Composer repository credentials: the auth.json / COMPOSER_AUTH shapes (http-basic, bearer, github-oauth, gitlab-token, gitlab-oauth) and the HTTP header each one sends."
+readme = "README.md"
+homepage = "https://github.com/cresset-tools/composer-rs"
+documentation = "https://docs.rs/composer-auth"
+keywords = ["composer", "php", "packagist", "auth", "credentials"]
+categories = ["authentication", "development-tools"]
+
+[dependencies]
+base64 = "0.22"
+serde_json = { workspace = true }
+
+[lints]
+workspace = true
