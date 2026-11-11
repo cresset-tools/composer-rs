@@ -5,13 +5,6 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.3.0](https://github.com/cresset-tools/composer-rs/compare/composer-semver-v0.2.0...composer-semver-v0.3.0) (2026-11-11)
-
-
-### Features
-
-* **composer-auth:** Composer repository credentials as a shared crate ([5b0fdf6](https://github.com/cresset-tools/composer-rs/commit/5b0fdf670e069701eb47de537711170147097a43))
-
 ## [0.2.0](https://github.com/cresset-tools/composer-rs/compare/composer-semver-v0.1.0...composer-semver-v0.2.0) (2026-06-25)
 
 
