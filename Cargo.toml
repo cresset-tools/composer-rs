@@ -9,7 +9,7 @@ resolver = "3"
 members = ["crates/composer-auth", "crates/composer-php-json", "crates/composer-semver", "crates/composer-wire"]
 
 [workspace.package]
-version = "0.2.0" # x-release-please-version
+version = "0.3.0" # x-release-please-version
 edition = "2024"
 rust-version = "1.95"
 license = "EUPL-1.2"
@@ -22,10 +22,10 @@ repository = "https://github.com/cresset-tools/composer-rs"
 # deps lack a version). The trailing release-please marker lets the tool
 # rewrite all of them in lockstep with `[workspace.package].version`.
 [workspace.dependencies]
-composer-auth = { path = "crates/composer-auth", version = "0.2.0" } # x-release-please-version
-composer-php-json = { path = "crates/composer-php-json", version = "0.2.0" } # x-release-please-version
-composer-semver = { path = "crates/composer-semver", version = "0.2.0" } # x-release-please-version
-composer-wire = { path = "crates/composer-wire", version = "0.2.0" } # x-release-please-version
+composer-auth = { path = "crates/composer-auth", version = "0.3.0" } # x-release-please-version
+composer-php-json = { path = "crates/composer-php-json", version = "0.3.0" } # x-release-please-version
+composer-semver = { path = "crates/composer-semver", version = "0.3.0" } # x-release-please-version
+composer-wire = { path = "crates/composer-wire", version = "0.3.0" } # x-release-please-version
 
 # Shared external deps.
 regex = { version = "1.11", default-features = false, features = [
